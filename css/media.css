@@ -1,0 +1,178 @@
+@media only screen and (min-width: 500px) {
+  .container_about,
+  .container_experience,
+  .container_education,
+  .container_certificats {
+    margin-right: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .main {
+    max-width: 100rem;
+        grid-template-areas: "name         name        photo" "about        about       info" "experience   experience  info" "education    education   info" "certificats  certificats info" "projects     projects    projects";
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .main {
+    max-width: 50rem;
+        grid-template-areas: "name         name        photo" "about        about       info" "experience   experience  info" "education    education   info" "certificats  certificats info" "projects     projects    projects";
+  }
+  .container {
+    margin-bottom: 2rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container .container_title {
+    font-size: 7px;
+  }
+  .container .item__content {
+    font-size: 10px;
+  }
+  .container_name .name__title {
+    font-size: 20px;
+  }
+  .container_name .name__subtitle {
+    font-size: 15px;
+  }
+  .container_photo .item-image__name {
+    border-radius: 100%;
+    max-width: 7rem;
+  }
+  .container_certificats .item__image-cert {
+    max-width: 4rem;
+    max-height: 4rem;
+  }
+  .container_projects .item__image {
+    width: 10rem;
+  }
+  .container_info {
+    font-size: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
+  .container_info .info .info__title {
+    font-size: 10px;
+  }
+  .social__img {
+    max-width: 4rem;
+    margin-right: 0.5rem;
+  }
+  .item .item__title,
+  .item .item__subtitle {
+    font-size: 10px;
+  }
+  .item .item__date {
+    font-size: 7px;
+  }
+  .item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .info__contacts {
+    grid-area: contacs;
+  }
+  .info__knowledge {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    grid-area: knowledge;
+  }
+  .info__tools {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: tools;
+  }
+  .info__other {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: other;
+  }
+  .info__language {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+    grid-area: language;
+  }
+  .info__social {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
+    grid-area: social;
+  }
+  .main {
+    margin: 0 auto;
+    max-width: 50rem;
+    -ms-grid-columns: 2fr 2fr 1fr;
+        grid-template-columns: 2fr 2fr 1fr;
+    padding: 0 1.5rem 0 1.5rem;
+        grid-template-areas: "name         name        photo" "about        about       about" "experience   experience  experience" "education    education   education" "certificats  certificats certificats" "projects     projects    projects" "info     info    info";
+  }
+  .container {
+    margin-bottom: 2rem;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .container .container_title {
+    font-size: 7px;
+  }
+  .container .item__content {
+    font-size: 10px;
+  }
+  .container_name .name__title {
+    font-size: 20px;
+  }
+  .container_name .name__subtitle {
+    font-size: 15px;
+  }
+  .container_photo .item-image__name {
+    border-radius: 100%;
+    max-width: 7rem;
+  }
+  .container_certificats .item__image-cert {
+    width: 4rem;
+    height: 4rem;
+  }
+  .container_projects .item__image {
+    width: 10rem;
+  }
+  .container_info {
+    font-size: 10px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: "contacts         contacts" "knowledge         tools" "knowledge         other" "language         social";
+  }
+  .container_info .info .info__title {
+    font-size: 10px;
+  }
+  .social__img {
+    max-width: 3.5rem;
+    margin-right: 0.5rem;
+  }
+  .item .item__title,
+  .item .item__subtitle {
+    font-size: 10px;
+  }
+  .item .item__date {
+    font-size: 7px;
+  }
+  .item:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  .container_projects .item_project .text__box {
+    padding-right: 1rem;
+  }
+  .container_projects .item_project .image__box .item__image {
+    width: 90px;
+  }
+}
+/*# sourceMappingURL=media.css.map */
