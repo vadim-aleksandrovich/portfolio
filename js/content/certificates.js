@@ -17,7 +17,7 @@ export default [
     id:       "1",
   },
 
-  {
+  /* {
     title:    "AWS Cloud Practitioner",
     subtitle: "Amazon Web Services",
     date:     "Jan 2022",
@@ -33,6 +33,6 @@ export default [
     badge:    "../../assets/images/certificates/aws-saa_badge.png",
     image:    "../../assets/images/certificates/aws-saa_cerf.jpg",
     id:       "3",
-  },
+  }, */
 
 ]

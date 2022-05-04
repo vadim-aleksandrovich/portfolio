@@ -63,7 +63,7 @@ export default [
     title:      "Portfolio",
     subtitle:   "My IT Portfolio",
     date:       "Dec 2021",
-    content:    "",
+    content:    "Javascript, SCSS, HTML5, AWS Route 53, AWS S3, AWS Cloudfront",
     image:      "",
     link:       "https://aleksandrovich.it",
     sourcecode: "https://github.com/vadim-aleksandrovich/portfolio"
