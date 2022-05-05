@@ -31,7 +31,7 @@ body {
 
 .header {
   display: flex;
-  background-color: $color-black;
+  /* background-color: $color-black; */
   width: 100%;
   margin: 0 auto 5rem auto;
 
@@ -160,13 +160,13 @@ body {
 
 .item__link {
   transition: all 0.5s ease-in;
-  filter: grayscale(100%);
+  filter: grayscale(100%) brightness(96%);
 }
 
 .item_project:hover {
   .item__link {
     transition: all 0.5s ease-in;
-    filter: grayscale(0%);
+    filter: grayscale(0%) brightness(100%);
   }
 }
 
