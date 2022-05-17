@@ -1,0 +1,71 @@
+@-webkit-keyframes animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(10deg) scale(0.4);
+    transform: rotate(10deg) scale(0.4);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes animation {
+  0% {
+    opacity: 0;
+    -webkit-transform: rotate(10deg) scale(0.4);
+    transform: rotate(10deg) scale(0.4);
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.popup__window {
+  display: none;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(41, 41, 41, 0.6);
+}
+
+.popup__window_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  border-radius: 0.9rem;
+  max-width: 90vw;
+  max-height: 90vh;
+  -webkit-animation-name: animation;
+  animation-name: animation;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+body.overflow-hidden_desktop {
+  overflow: hidden;
+}
+/*# sourceMappingURL=popup.css.map */

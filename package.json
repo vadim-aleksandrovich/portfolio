@@ -1,0 +1,36 @@
+{
+  "name": "it-portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/webpack --mode development",
+    "watch": "./node_modules/.bin/webpack --mode development --watch",
+    "build": "./node_modules/.bin/webpack --mode production; cp -R src/assets ./dist "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vadim-aleksandrovich/portfolio.git"
+  },
+  "author": "Vadim Aleksandrovich",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vadim-aleksandrovich/portfolio/issues"
+  },
+  "homepage": "https://github.com/vadim-aleksandrovich/portfolio#readme",
+  "devDependencies": {
+    "clean-webpack-plugin": "^4.0.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "loader": "^2.1.1",
+    "serverless-finch": "^4.0.0",
+    "serverless-single-page-app-plugin": "github:jonathanconway/serverless-single-page-app-plugin",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "serverless": "^3.17.0"
+  }
+}
