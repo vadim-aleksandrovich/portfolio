@@ -1,6 +1,9 @@
 import create from '@utils/create.js';
 /* import pre from './utils/preLoader.js'; */
-import '@styles/style.css'
+import '@styles/style.scss'
+import '@styles/popup.scss'
+import '@styles/media.scss'
+
 
 import containers from '@elements/containers.js';
 import blockAbout from '@content/about.js';
