@@ -4,7 +4,7 @@ export default [ "Linux Essentials",
   "Infrastructure as a Service",
   "Platform as a Service",
   "LAMP Stack",
-  "Bush scripting",
+  "Bash scripting",
   "Python scripting",
   "CI/CD",
 
