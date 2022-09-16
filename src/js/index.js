@@ -153,6 +153,7 @@ create('a', 'link link_info', create('img', 'social__img social__img_cw', '', ''
 
 
 
+
   let popupWindow = create('div', "popup__window","",body);
   let popupCard;
 function popupCreator(i) {
