@@ -19,7 +19,7 @@ export default [
 
   {
     title:    "AWS Learning: Object Storage",
-    subtitle: "Amazon Web Services",
+    subtitle: "Amazon Web Services Training and Certification",
     date:     "Sep 2022",
     badge:    "./assets/images/certificates/aws-learning-object-storage-badge.png",
     image:    "./assets/images/certificates/aws-learning-object-storage-cert.jpg",
@@ -28,10 +28,10 @@ export default [
 
   {
     title:    "AWS Learning: Block Storage",
-    subtitle: "Amazon Web Services",
+    subtitle: "Amazon Web Services Training and Certification",
     date:     "Sep 2022",
     badge:    "./assets/images/certificates/aws-learning-block-storage-badge.png",
     image:    "./assets/images/certificates/aws-learning-block-storage-cert.jpg",
     id:       "3",
-  }
+  },
 ]
