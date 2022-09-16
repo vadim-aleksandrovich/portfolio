@@ -3,8 +3,8 @@ export default [
     title:    "RS School Javascript | Frontend",
     subtitle: "THE ROLLING SCOPES SCHOOL",
     date:     "Feb 2021",
-    badge:    "./assets/images/certificates/rsschool_js_badge.png",
-    image:    "./assets/images/certificates/rsschool_js_cert.jpg",
+    badge:    "./assets/images/certificates/rsschool-js-badge.png",
+    image:    "./assets/images/certificates/rsschool-js-cert.pdf",
     id:       "0",
   },
 
@@ -12,27 +12,27 @@ export default [
     title:    "EF SET English",
     subtitle: "EF Standart English Test",
     date:     "Dec 2021",
-    badge:    "./assets/images/certificates/efset_badge.png",
-    image:    "./assets/images/certificates/efset_cert.jpg",
+    badge:    "./assets/images/certificates/efset-badge.png",
+    image:    "./assets/images/certificates/efset-cert.pdf",
     id:       "1",
   },
 
-  /* {
-    title:    "AWS Cloud Practitioner",
+  {
+    title:    "AWS Learning: Object Storage",
     subtitle: "Amazon Web Services",
-    date:     "Jan 2022",
-    badge:    "./assets/images/certificates/aws-cp_badge.png",
-    image:    "./assets/images/certificates/aws-cp_cerf.jpg",
+    date:     "Sep 2022",
+    badge:    "./assets/images/certificates/aws-learning-object-storage-badge.png",
+    image:    "./assets/images/certificates/aws-learning-object-storage-cert.pdf",
     id:       "2",
   },
 
   {
-    title:    "AWS Solution Architect Associate",
+    title:    "AWS Learning: Block Storage",
     subtitle: "Amazon Web Services",
-    date:     "Feb 2022",
-    badge:    "./assets/images/certificates/aws-saa_badge.png",
-    image:    "./assets/images/certificates/aws-saa_cerf.jpg",
+    date:     "Sep 2022",
+    badge:    "./assets/images/certificates/aws-learning-block-storage-badge.png",
+    image:    "./assets/images/certificates/aws-learning-block-storage-cert.pdf",
     id:       "3",
-  }, */
+  },
 
 ]
