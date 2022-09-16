@@ -70,13 +70,13 @@ const createEducation = function createEducation() {
 const createCertificates = function createCertificates() {
   for (let i = blockCertificates.length - 1; i >=0 ; i -= 1) {
     const item = create('section', 'item item_certificate', '', certificats,["id", blockCertificates[i].id]);
-    const textBox = create('div', 'text__box', '', item);
     const imageBox = create('div', 'image__box', '', item);
-
+    const textBox = create('div', 'text__box', '', item);
+    create('img', 'item__image item__image-cert','', imageBox, ['src', blockCertificates[i].badge])
     create('h3', 'item__title', `${blockCertificates[i].title}`, textBox);
     create('h4', 'item__subtitle',`${blockCertificates[i].subtitle}`, textBox);
     create('p', 'item__date',`${blockCertificates[i].date}`, textBox);
-    create('img', 'item__image item__image-cert','', imageBox, ['src', blockCertificates[i].badge]);
+    ;
   }
 };
 
@@ -148,6 +148,7 @@ create('h3', 'info__title info__title_social',`${infoTitles.social}`, blockSocia
 const boxSocial = create('div', 'box_social','', blockSocial);
 create('a', 'link link_info', create('img', 'social__img social__img_li', '', '',['src',infoSocial.linkedinIcon]), boxSocial, ['href',infoSocial.linkedin]);
 create('a', 'link link_info', create('img', 'social__img social__img_gh', '', '',['src',infoSocial.githubIcon]), boxSocial, ['href',infoSocial.github]);
+create('a', 'link link_info', create('img', 'social__img social__img_cr', '', '',['src',infoSocial.credlyIcon]), boxSocial, ['href',infoSocial.credly]);
 create('a', 'link link_info', create('img', 'social__img social__img_cw', '', '',['src',infoSocial.codewarsIcon]), boxSocial, ['href',infoSocial.codewars]);
 
 

@@ -1,8 +1,7 @@
 @media only screen and (min-width: 500px) {
   .container_about,
   .container_experience,
-  .container_education,
-  .container_certificats {
+  .container_education {
     margin-right: 4rem;
   }
 }
@@ -15,9 +14,13 @@
       "about        about       info"
       "experience   experience  info"
       "education    education   info"
-      "certificats  certificats info"
+      "certificats  certificats certificats"
       "projects     projects    projects";
   }
+  .item_certificate {
+    width: 48%;
+  }
+
 }
 
 @media only screen and (max-width: 800px) {
@@ -28,7 +31,7 @@
       "about        about       info"
       "experience   experience  info"
       "education    education   info"
-      "certificats  certificats info"
+      "certificats  certificats certificats"
       "projects     projects    projects";
   }
   .container {
@@ -56,9 +59,9 @@
     max-width: 7rem;
   }
 
-  .container_certificats .item__image-cert {
-    max-width: 4rem;
-    max-height: 4rem;
+  .container_certificats
+  .item__image-cert {
+    max-width: 12rem;
   }
 
   .container_projects .item__image {
@@ -89,6 +92,16 @@
       font-size: 7px;
     }
   }
+
+  .item_certificate {
+    width: 100%;
+  }
+
+  .item__image-cert {
+    width: 10rem;
+
+  }
+
   .item:not(:last-child) {
     margin-bottom: 2rem;
   }
@@ -158,8 +171,8 @@
   }
 
   .container_certificats .item__image-cert {
-    width: 4rem;
-    height: 4rem;
+    width: 10rem;
+
   }
 
   .container_projects .item__image {
@@ -195,6 +208,12 @@
       font-size: 7px;
     }
   }
+
+  .item__image-cert {
+    width: 12rem;
+
+  }
+
   .item:not(:last-child) {
     margin-bottom: 2rem;
   }

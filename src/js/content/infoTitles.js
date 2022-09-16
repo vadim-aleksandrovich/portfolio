@@ -1,5 +1,5 @@
 export default {
-  knowledge:"Industrial Knowledge",
+  knowledge:"Industry Knowledge",
   tools: "Tools & Technologies",
   other: "Other Skills",
   language: "Languages",

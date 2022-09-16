@@ -47,6 +47,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  align-self: center;
   position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -56,7 +57,7 @@
           justify-content: space-between;
   border-radius: 0.9rem;
   max-width: 90vw;
-  max-height: 90vh;
+  max-height: 80vh;
   -webkit-animation-name: animation;
           animation-name: animation;
   -webkit-animation-duration: 0.4s;

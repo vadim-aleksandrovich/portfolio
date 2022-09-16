@@ -50,7 +50,9 @@ body {
     "about        about       info"
     "experience   experience  info"
     "education    education   info"
-    "certificats  certificats info"
+    "certificats  certificats certificats"
+    "certificats  certificats certificats"
+    "certificats  certificats certificats"
     "projects     projects    projects";
 }
 
@@ -66,17 +68,25 @@ body {
   color: $color-gray;
 }
 
-.item {
-}
-
 .item:not(:last-child) {
   margin-bottom: 4rem;
+}
+
+.item__image-cert {
+  width: 12rem;
+  padding-right: 2rem;
+
 }
 .container_title {
   font-size: 1.3rem;
   text-transform: uppercase;
   color: $color-gray;
   letter-spacing: 0.4rem;
+}
+
+.container_title_certificate {
+  width:100%;
+  margin-bottom: 1rem;
 }
 .item__title {
   font-weight: 500;
@@ -122,19 +132,27 @@ body {
 
 .container_certificats {
   grid-area: certificats;
-  .item_certificate {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    transition: all 0.5s ease-in;
-    filter: grayscale(100%);
-  }
-
-  .item__image-cert {
-    width: 8rem;
-    height: auto;
-  }
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-between;
 }
+
+
+.item_certificate {
+  width: 49%;
+  display: flex;
+  flex-direction: row;
+  transition: all 0.5s ease-in;
+  filter: grayscale(100%);
+  margin-right: 2rem;
+}
+
+.item_certificate:nth-child(odd) {
+  margin-right: 0rem;
+
+}
+
+
 .item_certificate:hover {
   transition: all 0.5s ease-in;
   filter: grayscale(0%);
@@ -189,9 +207,9 @@ body {
 }
 
 .social__img {
-  margin-right: 2rem;
+  margin-right: 1rem;
   max-width: 5rem;
-  border-radius: 5%;
+  border-radius: 50%;
 }
 
 .social__img_li {
@@ -201,6 +219,11 @@ body {
 
 .social__img_gh {
   filter: brightness(290%) grayscale(100%);
+  transition: all 0.5s ease-in;
+}
+
+.social__img_cr {
+  filter: brightness(240%) grayscale(100%);
   transition: all 0.5s ease-in;
 }
 
