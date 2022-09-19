@@ -1,4 +1,4 @@
 export default [
-  "Russian (native)",
+  "Russian (native) <br>",
   "English (upper-intermediate)",
 ]

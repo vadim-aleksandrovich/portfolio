@@ -10,12 +10,13 @@
   .main {
     max-width: 100rem;
     grid-template-areas:
-      "name         name        photo"
-      "about        about       info"
-      "experience   experience  info"
-      "education    education   info"
-      "certificats  certificats certificats"
-      "projects     projects    projects";
+    "name name info"
+    "about about skills"
+    "about about languages"
+    "experience experience experience"
+    "education education education"
+    "certificats certificats certificats"
+    "projects projects projects";
   }
   .item_certificate {
     width: 48%;
@@ -27,22 +28,23 @@
   .main {
     max-width: 50rem;
     grid-template-areas:
-      "name         name        photo"
-      "about        about       info"
-      "experience   experience  info"
-      "education    education   info"
-      "certificats  certificats certificats"
-      "projects     projects    projects";
+    "name name info"
+    "about about skills"
+    "about about languages"
+    "experience experience experience"
+    "education education education"
+    "certificats certificats certificats"
+    "projects projects projects";
   }
   .container {
     margin-bottom: 2rem;
     justify-content: flex-start;
 
     .container_title {
-      font-size: 7px;
+      font-size: 12px;
     }
     .item__content {
-      font-size: 10px;
+      font-size: 14px;
     }
   }
 
@@ -59,39 +61,40 @@
     max-width: 7rem;
   }
 
+  .container_skills {
+    .item_skill {
+    }
+    .item_skill:nth-of-type(2n){
+    }
+  }
+
   .container_certificats
   .item__image-cert {
     max-width: 12rem;
   }
 
   .container_projects .item__image {
-    width: 10rem;
-  }
-  .container_info {
-    font-size: 10px;
-    display: flex;
-    justify-content: start;
-    .info {
-      .info__title {
-        font-size: 10px;
-      }
-    }
+    width: 15rem;
   }
 
   .social__img {
-    max-width: 4rem;
-    margin-right: 0.5rem;
+    max-width: 2.1rem;
+    margin-right: 0.4rem;
   }
 
   .item {
     .item__title,
     .item__subtitle {
-      font-size: 10px;
+      font-size: 14px;
+    }
+    .item__content {
+      font-size: 14px;
     }
     .item__date {
-      font-size: 7px;
+      font-size: 11px;
     }
   }
+
 
   .item_certificate {
     width: 100%;
@@ -108,53 +111,25 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .info__contacts {
-    grid-area: contacs;
-  }
-
-  .info__knowledge {
-    grid-area: knowledge;
-  }
-
-  .info__tools {
-    grid-area: tools;
-  }
-
-  .info__other {
-    grid-area: other;
-  }
-
-  .info__language {
-    grid-area: language;
-  }
-
-  .info__social {
-    grid-area: social;
-  }
-
   .main {
     margin: 0 auto;
     max-width: 50rem;
     grid-template-columns: 2fr 2fr 1fr;
     padding: 0 1.5rem 0 1.5rem;
     grid-template-areas:
-      "name         name        photo"
-      "about        about       about"
-      "experience   experience  experience"
-      "education    education   education"
-      "certificats  certificats certificats"
-      "projects     projects    projects"
-      "info     info    info";
+    "name         name          photo"
+    "info         info          info"
+    "about        about         about"
+    "skills       skills        skills"
+    "languages    languages     languages"
+    "experience   experience    experience"
+    "education    education     education"
+    "certificats  certificats   certificats"
+    "projects     projects      projects";
   }
   .container {
     margin-bottom: 2rem;
     justify-content: flex-start;
-    .container_title {
-      font-size: 7px;
-    }
-    .item__content {
-      font-size: 10px;
-    }
   }
 
   .container_name {
@@ -175,38 +150,14 @@
 
   }
 
-  .container_projects .item__image {
-    width: 10rem;
-  }
-  .container_info {
-    font-size: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-      "contacts         contacts"
-      "knowledge         tools"
-      "knowledge         other"
-      "language         social";
-    .info {
-      .info__title {
-        font-size: 10px;
-      }
-    }
+  .container_projects .item__image-project {
+
+    width: 15rem;
   }
 
   .social__img {
     max-width: 3.5rem;
     margin-right: 0.5rem;
-  }
-
-  .item {
-    .item__title,
-    .item__subtitle {
-      font-size: 10px;
-    }
-    .item__date {
-      font-size: 7px;
-    }
   }
 
   .item__image-cert {
@@ -220,8 +171,5 @@
 
   .container_projects .item_project .text__box {
     padding-right: 1rem;
-  }
-  .container_projects .item_project .image__box .item__image {
-    width: 90px;
   }
 }
