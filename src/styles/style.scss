@@ -29,7 +29,6 @@ body {
 
 .header {
   display: flex;
-  /* background-color: $color-black; */
   width: 100%;
   margin: 0 auto 5rem auto;
 
@@ -44,16 +43,15 @@ body {
   max-width: 120rem;
   margin: 0 auto;
   padding: 0 5rem 0 5rem;
-  grid-template-columns: 2fr 2fr 1fr;
+  grid-template-columns: 2fr 2fr 2.5fr;
+  gap: 0px 0px;
   grid-template-areas:
-    "name         name        photo"
-    "about        about       info"
-    "experience   experience  info"
-    "education    education   info"
-    "certificats  certificats certificats"
-    "certificats  certificats certificats"
-    "certificats  certificats certificats"
-    "projects     projects    projects";
+    "name name info"
+    "about about skills"
+    "experience experience languages"
+    "education education education"
+    "certificats certificats certificats"
+    "projects projects projects";
 }
 
 .container {
@@ -64,6 +62,7 @@ body {
   margin-bottom: 4rem;
   font-size: 1.7rem;
 }
+
 .link_info {
   color: $color-gray;
 }
@@ -73,15 +72,16 @@ body {
 }
 
 .item__image-cert {
-  width: 12rem;
+  width: 11rem;
   padding-right: 2rem;
 
 }
 .container_title {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-transform: uppercase;
   color: $color-gray;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.3rem;
+  margin-bottom:1rem;
 }
 
 .container_title_certificate {
@@ -98,7 +98,16 @@ body {
   color: $color-gray;
 }
 
+.container_skills {
+  grid-area: skills;
+  margin-bottom: 0;
+  .item_skill {
+    margin-bottom:1rem;
+  }
+}
+
 .container_name {
+  margin-bottom: 2rem;
   grid-area: name;
   .name__title {
     font-size: 3.4rem;
@@ -110,12 +119,24 @@ body {
   }
 }
 
-.container_photo {
-  grid-area: photo;
+.container_info {
+  margin-bottom: 0;
+  grid-area: info;
+  align-items:flex-start;
+  vertical-align: middle;
+  .info__social{
+    margin: auto 0 auto 0;
+  }
   .item-image__name {
     border-radius: 100%;
     max-width: 13rem;
+    display: none;
+
   }
+}
+
+.container_languages {
+  grid-area: languages;
 }
 
 .container_about {
@@ -137,7 +158,6 @@ body {
   justify-content:space-between;
 }
 
-
 .item_certificate {
   width: 49%;
   display: flex;
@@ -151,7 +171,6 @@ body {
   margin-right: 0rem;
 
 }
-
 
 .item_certificate:hover {
   transition: all 0.5s ease-in;
@@ -186,29 +205,14 @@ body {
   }
 }
 
-.container_info {
-  grid-area: info;
-  padding: 0;
-  .info {
-    margin-bottom: 4rem;
-    .info__title {
-      color: $color-gray;
-      font-size: 2rem;
-      font-weight: 500;
-    }
-    .info__content {
-      color: $color-gray;
-    }
-  }
-}
-
 .info__title_social {
   padding-bottom: 1rem;
 }
 
 .social__img {
+  filter: brightness(150%) grayscale(100%);
   margin-right: 1rem;
-  max-width: 5rem;
+  max-width: 4rem;
   border-radius: 50%;
 }
 
@@ -229,6 +233,16 @@ body {
 
 .social__img_cw {
   filter: brightness(220%) grayscale(100%);
+  transition: all 0.5s ease-in;
+}
+
+.social__img_em {
+  filter: brightness(100%) grayscale(100%);
+  transition: all 0.5s ease-in;
+}
+
+.social__img_ph {
+  filter: brightness(130%) grayscale(100%);
   transition: all 0.5s ease-in;
 }
 

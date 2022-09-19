@@ -1,9 +1,7 @@
 import create from '@utils/create.js';
-/* import pre from './utils/preLoader.js'; */
 import '@styles/style.scss'
 import '@styles/popup.scss'
 import '@styles/media.scss'
-
 
 import containers from '@elements/containers.js';
 import blockAbout from '@content/about.js';
@@ -12,28 +10,23 @@ import blockEducation from '@content/education.js';
 import blockCertificates from '@content/certificates.js';
 import blockProjects from '@content/projects.js';
 
-import infoTitles from '@content/infoTitles.js';
-import infoContacts from '@content/infoContacts.js';
-import infoKnowledge from '@content/infoKnowledge.js';
-import infoTools from '@content/infoTools.js';
-import infoOther from '@content/infoOther.js';
 import infoLanguage from '@content/infoLanguage.js';
 import infoSocial from '@content/infoSocial.js';
+import infoSkills from '@content/infoSkills.js';
 
 const body = document.querySelector('body');
-let head = document.querySelector('head');
 const header = create('header', 'header');
-
 const main = create('main', 'main');
 const name = create('article', 'container container_name', '', main);
-const photo = create('article', 'container container_photo', '', main);
+const photo = create('article', 'container container_info', '', main);
 const about = create('article', 'container container_about', '', main);
 const experience = create('article', 'container container_experience', `${containers.experience}`, main);
 const education = create('article', 'container container_education', `${containers.education}`, main);
 const certificats = create('article', 'container container_certificats', `${containers.certificats}`, main);
 const projects = create('article', 'container container_projects', `${containers.projects}`, main);
-const info = create('article', 'container container_info', '', main);
-/* const experience_content = create('p', 'text text_content', `${blockAbout.content}`, about); // ! Delete? */
+const skills = create('article', 'container container_skills', `${containers.skills}`, main);
+const languages = create('article', 'container container_languages', `${containers.languages}`, main);
+
 document.body.prepend(header, main);
 
 create('h2', 'name__title', `${blockAbout.title}`, name);
@@ -44,7 +37,14 @@ create('img', 'item-image item-image__name','', imageBox, ['src', blockAbout.pho
 
 create('p', 'item__content', `${blockAbout.content}`, about);
 
-
+const createSkills = function createSkills() {
+  for (let i = 0; i <= infoSkills.length - 1; i += 1) {
+    const item = create('section', 'item item_skill', '', skills);
+    const textBox = create('div', 'text__box', '', item);
+    create('h4', 'item__title', `${infoSkills[i].title}`, textBox);
+    create('p', 'item__content',`${infoSkills[i].content}`, textBox);
+  }
+};
 
 const createExperience = function createExperience() {
   for (let i = blockExperience.length - 1; i >=0; i -= 1) {
@@ -62,7 +62,6 @@ const createEducation = function createEducation() {
     create('h3', 'item__title', `${blockEducation[i].title}`, item);
     create('h4', 'item__subtitle',`${blockEducation[i].subtitle}`, item);
     create('p', 'item__date',`${blockEducation[i].date}`, item);
-
     if (blockEducation[i].content) create('p', 'item__content',`${blockEducation[i].content}`, item);
   }
 };
@@ -95,65 +94,28 @@ const createProjects = function createProjects() {
   }
 };
 
-const blockInfo = create('section', 'info info__contacs', '', info);
-create('p', 'info__content', create('a', 'link link_info', `${infoContacts.mail}`, blockInfo, ['href',"mailto:"+infoContacts.mail]), blockInfo);
-create('p', 'info__content', create('a', 'link link_info', `${infoContacts.phone}`, blockInfo, ['href',"tel:"+infoContacts.phone]), blockInfo);
-create('p', 'info__content', create('a', 'link link_info', `${infoContacts.linkedinContent}`, blockInfo, ['href',infoContacts.linkedin]), blockInfo);
-
-const blockKnowledge = function blockKnowledge() {
-  const item = create('section', 'info info__knowledge','', info);
-  create('h3', 'info__title',`${infoTitles.knowledge}`, item);
-  for (let i = 0; i < infoKnowledge.length; i += 1) {
-    create('p', 'info__content', `${infoKnowledge[i]}`, item);
+const blockSocial = create('section', 'info info__social', '', photo);
+const boxSocial = create('div', 'box_social','', blockSocial);
+const createSocial = function creeateSocial() {
+  for (let i = 0; i <= infoSocial.length - 1 ; i += 1) {
+    create('a', 'link link_info', create('img', `social__img ${infoSocial[i].cssClass}`, '', '',['src',infoSocial[i].icon]), boxSocial, ['href',infoSocial[i].link]);
   }
 };
 
-const blockTools = function blockTools() {
-  const item = create('section', 'info info__tools','', info);
-  create('h3', 'info__title',`${infoTitles.tools}`, item);
-  create('p', 'info__content', `${infoTools.content}`, item);
-
-};
-
-const blockOther = function blockOther() {
-  const item = create('section', 'info info__other','', info);
-  create('h3', 'info__title',`${infoTitles.other}`, item);
-  for (let i = 0; i < infoOther.length; i += 1) {
-    create('p', 'info__content', `${infoOther[i]}`, item);
-  }
-};
-
-const blockLanguage = function blockLanguage() {
-  const item = create('section', 'info info__language','', info);
-  create('h3', 'info__title',`${infoTitles.language}`, item);
+const createLanguages = function createLanguages() {
+  const item = create('section', 'info info__language','', languages);
+  // create('h2', 'container_title',`${infoTitles.language}`, item);
   for (let i = 0; i < infoLanguage.length; i += 1) {
-    create('p', 'info__content', `${infoLanguage[i]}`, item);
+    create('p', 'item__content', `${infoLanguage[i]}`, item);
   }
 };
-
-
+createSocial();
+createSkills();
+createLanguages();
 createExperience();
 createEducation();
 createCertificates();
 createProjects();
-
-blockKnowledge();
-blockTools();
-blockOther();
-blockLanguage();
-/* preLoader(certificats); */
-
-const blockSocial = create('section', 'info info__social', '', info);
-create('h3', 'info__title info__title_social',`${infoTitles.social}`, blockSocial);
-const boxSocial = create('div', 'box_social','', blockSocial);
-create('a', 'link link_info', create('img', 'social__img social__img_li', '', '',['src',infoSocial.linkedinIcon]), boxSocial, ['href',infoSocial.linkedin]);
-create('a', 'link link_info', create('img', 'social__img social__img_gh', '', '',['src',infoSocial.githubIcon]), boxSocial, ['href',infoSocial.github]);
-create('a', 'link link_info', create('img', 'social__img social__img_cr', '', '',['src',infoSocial.credlyIcon]), boxSocial, ['href',infoSocial.credly]);
-create('a', 'link link_info', create('img', 'social__img social__img_cw', '', '',['src',infoSocial.codewarsIcon]), boxSocial, ['href',infoSocial.codewars]);
-
-
-
-
 
   let popupWindow = create('div', "popup__window","",body);
   let popupCard;
@@ -177,22 +139,3 @@ popupWindow.addEventListener("click", function (e) {
     popupCard.remove();
   }
 });
-
-
-
-
-function preLoader(arr) {
-  let image = null;
-  arr.forEach(function(object) {
-    image = create('link', '', '', head,['rel', 'preload'], ['href', object.image], ['as', 'image'] )
-  });
-  return image;
-}
-preLoader(blockCertificates);
-/* var arr = [1, -1, 2, -2, 3];
-
-let positiveArr = arr.filter(function(number) {
-  return number > 0;
-});
-
-alert( positiveArr ); // 1,2,3 */
