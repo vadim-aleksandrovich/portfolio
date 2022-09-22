@@ -34,4 +34,22 @@ export default [
     image:    "./assets/images/certificates/aws-learning-block-storage-cert.jpg",
     id:       "3",
   },
+
+  {
+    title:    "AWS Learning: File Storage",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Sep 2022",
+    badge:    "./assets/images/certificates/aws-learning-file-storage-badge.png",
+    image:    "./assets/images/certificates/aws-learning-file-storage-cert.jpg",
+    id:       "4",
+  },
+
+  {
+    title:    "AWS Learning: Storage Core",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Sep 2022",
+    badge:    "./assets/images/certificates/aws-learning-storage-core-badge.png",
+    image:    "./assets/images/certificates/aws-learning-storage-core-badge.png",
+    id:       "5",
+  },
 ]
