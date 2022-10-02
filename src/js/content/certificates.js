@@ -52,4 +52,13 @@ export default [
     image:    "./assets/images/certificates/aws-learning-storage-core-badge.png",
     id:       "5",
   },
+
+  {
+    title:    "AWS Cloud Quest: Cloud Practitioner",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Oct 2022",
+    badge:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner.png",
+    image:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner.png",
+    id:       "6",
+  },
 ]

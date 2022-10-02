@@ -30,7 +30,7 @@ export default [
   },
 
   {
-    title:      "Keybord",
+    title:      "Keyboard",
     subtitle:   "It may works like a virtual keyboard. Also duplicate physical keys, and shows which one had been pressed",
     date:       "Dec 2020",
     content:    "Browser's Events, Input Tracking",
