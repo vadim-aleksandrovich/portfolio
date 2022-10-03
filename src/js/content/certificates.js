@@ -54,11 +54,20 @@ export default [
   },
 
   {
+    title:    "AWS Learning: Data Migration",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Oct 2022",
+    badge:    "./assets/images/certificates/aws-learning-data-migration-badge.png",
+    image:    "./assets/images/certificates/aws-learning-data-migration-cert.jpg",
+    id:       "6",
+  },
+
+  {
     title:    "AWS Cloud Quest: Cloud Practitioner",
     subtitle: "Amazon Web Services Training and Certification",
     date:     "Oct 2022",
     badge:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner.png",
     image:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner.png",
-    id:       "6",
+    id:       "7",
   },
 ]
