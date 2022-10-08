@@ -7,7 +7,7 @@ export default [
 
   {
     title:      'Configuration and Continuous Integration ',
-    content:    'Ansible, Terraform, Jenkins',
+    content:    'Terraform, Jenkins',
   },
 
   {
@@ -32,7 +32,7 @@ export default [
 
   {
     title:      'Other',
-    content:    'GitHab, GitLab, HTML, CSS, Slack, Trello',
+    content:    'GitHab, GitLab, HTML, CSS',
   },
 
 ]
