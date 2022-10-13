@@ -63,11 +63,56 @@ export default [
   },
 
   {
+    title:    "AWS Learning: Data Protection & Disaster Recovery",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Oct 2022",
+    badge:    "./assets/images/certificates/aws-learning-data-protection-badge.png",
+    image:    "./assets/images/certificates/aws-learning-data-protection-cert.jpg",
+    id:       "7",
+  },
+
+  {
+    title:    "AWS Learning: Storage Technologist",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Oct 2022",
+    badge:    "./assets/images/certificates/aws-learning-storage-technologist-badge.png",
+    image:    "./assets/images/certificates/aws-learning-storage-technologist-badge.png",
+    id:       "8",
+  },
+
+  {
     title:    "AWS Cloud Quest: Cloud Practitioner",
     subtitle: "Amazon Web Services Training and Certification",
     date:     "Oct 2022",
-    badge:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner.png",
-    image:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner.png",
-    id:       "7",
+    badge:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner-badge.png",
+    image:    "./assets/images/certificates/aws-cloud-quest-cloud-practitioner-badge.png",
+    id:       "9",
+  },
+
+  {
+    title:    "AWS Educate: Getting Started with Compute",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Oct 2022",
+    badge:    "./assets/images/certificates/aws-educate-getting-started-with-compute-badge.png",
+    image:    "./assets/images/certificates/aws-educate-getting-started-with-compute-badge.png",
+    id:       "10",
+  },
+
+  {
+    title:    "AWS Educate: Getting Started with Storage",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Oct 2022",
+    badge:    "./assets/images/certificates/aws-educate-getting-started-with-storage-badge.png",
+    image:    "./assets/images/certificates/aws-educate-getting-started-with-storage-badge.png",
+    id:       "11",
+  },
+
+  {
+    title:    "AWS Educate: Introduction to Cloud 101",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "Oct 2022",
+    badge:    "./assets/images/certificates/aws-educate-introduction-to-cloud-101-badge.png",
+    image:    "./assets/images/certificates/aws-educate-introduction-to-cloud-101-badge.png",
+    id:       "12",
   },
 ]
