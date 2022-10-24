@@ -39,11 +39,11 @@ export default [
   icon:     './assets/images/links/mail.jpg',
 },
 
-{
-  title:    'phone',
-  link:     'tel:+375445427383',
-  content:  '',
-  cssClass: 'social__img_ph',
-  icon:     './assets/images/links/phone.jpg',
-},
+// {
+//   title:    'phone',
+//   link:     'tel:+***44******',
+//   content:  '',
+//   cssClass: 'social__img_ph',
+//   icon:     './assets/images/links/phone.jpg',
+// },
 ]

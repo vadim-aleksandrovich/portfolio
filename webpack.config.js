@@ -66,7 +66,8 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin({
       patterns: [
-        { from: path.resolve(__dirname,'src/assets'), to: path.resolve(__dirname, 'dist/assets') }
+        { from: path.resolve(__dirname,'src/assets'), to: path.resolve(__dirname, 'dist/assets') },
+        { from: path.resolve(__dirname, 'src/cv.pdf'), to: path.resolve(__dirname, 'dist/')}
       ],
     }),
     new MiniCssExtractPlugin({
@@ -87,7 +88,7 @@ module.exports = {
       ]
       },
       {
-        test: /\.(png|jpg|jpeg|svg|gif)$/,
+        test: /\.(png|jpg|jpeg|svg|gif|pdf)$/,
         use:['file-loader']
       }
     ]
