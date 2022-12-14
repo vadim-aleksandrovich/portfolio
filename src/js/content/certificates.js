@@ -115,4 +115,13 @@ export default [
     image:    "./assets/images/certificates/aws-educate-introduction-to-cloud-101-badge.png",
     id:       "12",
   },
+  {
+    title:    "GitOps Certified: Fundamentals",
+    subtitle: "Codefresh",
+    date:     "Dec 2022",
+    badge:    "./assets/images/certificates/gitops-fundamentals-badge.png",
+    image:    "./assets/images/certificates/gitops-fundamentals-cert.jpg",
+    id:       "13",
+  }
 ]
+

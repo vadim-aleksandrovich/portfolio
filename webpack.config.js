@@ -67,7 +67,7 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         { from: path.resolve(__dirname,'src/assets'), to: path.resolve(__dirname, 'dist/assets') },
-        { from: path.resolve(__dirname, 'src/cv.pdf'), to: path.resolve(__dirname, 'dist/')}
+        // { from: path.resolve(__dirname, 'src/cv.pdf'), to: path.resolve(__dirname, 'dist/')}
       ],
     }),
     new MiniCssExtractPlugin({

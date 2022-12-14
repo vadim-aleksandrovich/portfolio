@@ -7,7 +7,7 @@ export default [
 
   {
     title:      'Configuration and Continuous Integration ',
-    content:    'Terraform, Jenkins',
+    content:    'Terraform, Jenkins, Ansible',
   },
 
   {
@@ -16,18 +16,18 @@ export default [
   },
 
   {
-    title:      'Containers',
-    content:    'Docker, AWS ECS',
+    title:      'Containerization and Orchestration',
+    content:    'Docker, K8s, AWS ECS, AWS EKS',
   },
 
   {
     title:      'System Administration',
-    content:    'Ubuntu, CentOS, AlmaLinux, Bash',
+    content:    'Linux, Bash',
   },
 
   {
     title:      'Networking and Web',
-    content:    'NGINX, Apache, MySQL',
+    content:    'NGINX, Apache, SQL',
   },
 
   {
