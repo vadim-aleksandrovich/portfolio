@@ -15,7 +15,7 @@ plugins:
 
 custom:
   client:
-    bucketName: aleksandrovich.it
+    bucketName: aleksandrovich.ml
     distributionFolder: dist
   s3BucketName: ${self:custom.client.bucketName}
 

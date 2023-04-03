@@ -2,37 +2,41 @@ export default [
 
   {
     title:      'Cloud',
-    content:    'Amazon Web Services',
+    content:    'Amazon Web Services, Yandex Cloud',
   },
 
   {
-    title:      'Configuration and Continuous Integration ',
-    content:    'Terraform, Jenkins, Ansible',
+    title:      'IaC | Configuration | CI/CD',
+    content:    'Terraform | Ansible | GitLab CI/CD, Jenkins, AWS CodePipeline, ArgoCD',
   },
 
   {
     title:      'Programming languages',
-    content:    'Python, Javascript',
+    content:    'Python, Javascript, Bash',
   },
 
   {
     title:      'Containerization and Orchestration',
-    content:    'Docker, K8s, AWS ECS, AWS EKS',
+    content:    'Docker, Docker-Compose, Kubernetes',
+  },
+  {
+    title:      'Monitoring and Logging systems',
+    content:    'Grafana, Prometheus, Thanos, Loki',
   },
 
   {
-    title:      'System Administration',
-    content:    'Linux, Bash',
+    title:      'Operating systems',
+    content:    'Linux',
   },
 
   {
-    title:      'Networking and Web',
-    content:    'NGINX, Apache, SQL',
+    title:      'Webservers | Databases',
+    content:    'NGINX, Nginx Proxy Manager, Apache | MySQL, PostgreSQL',
   },
 
   {
-    title:      'Other',
-    content:    'GitHab, GitLab, HTML, CSS',
+    title:      'VCS and other',
+    content:    'GitHab, GitLab, Lens, Portainer, Jira, HTML, CSS, etc',
   },
 
 ]
