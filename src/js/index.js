@@ -9,10 +9,11 @@ import blockExperience from '@content/experience.js';
 import blockEducation from '@content/education.js';
 import blockCertificates from '@content/certificates.js';
 import blockProjects from '@content/projects.js';
-
 import infoLanguage from '@content/infoLanguage.js';
 import infoSocial from '@content/infoSocial.js';
 import infoSkills from '@content/infoSkills.js';
+
+let isProjects=false
 
 const body = document.querySelector('body');
 const header = create('header', 'header');
@@ -23,7 +24,10 @@ const about = create('article', 'container container_about', '', main);
 const experience = create('article', 'container container_experience', `${containers.experience}`, main);
 const education = create('article', 'container container_education', `${containers.education}`, main);
 const certificats = create('article', 'container container_certificats', `${containers.certificats}`, main);
-const projects = create('article', 'container container_projects', `${containers.projects}`, main);
+if (isProjects) {
+  var projects = create('article', 'container container_projects', `${containers.projects}`, main);
+}
+
 const skills = create('article', 'container container_skills', `${containers.skills}`, main);
 const languages = create('article', 'container container_languages', `${containers.languages}`, main);
 
@@ -104,7 +108,6 @@ const createSocial = function creeateSocial() {
 
 const createLanguages = function createLanguages() {
   const item = create('section', 'info info__language','', languages);
-  // create('h2', 'container_title',`${infoTitles.language}`, item);
   for (let i = 0; i < infoLanguage.length; i += 1) {
     create('p', 'item__content', `${infoLanguage[i]}`, item);
   }
@@ -115,10 +118,14 @@ createLanguages();
 createExperience();
 createEducation();
 createCertificates();
-createProjects();
 
-  let popupWindow = create('div', "popup__window","",body);
-  let popupCard;
+if (isProjects) {
+  createProjects();
+}
+
+
+let popupWindow = create('div', "popup__window","",body);
+let popupCard;
 function popupCreator(i) {
   popupCard = create("img", "popup__card", "", popupWindow, ['src', blockCertificates[i].image]);
 }

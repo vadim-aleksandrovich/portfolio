@@ -41,7 +41,7 @@ export default [
 
   {
     title:      "Gem Puzzle",
-    subtitle:   "Famous game, where you need to put the gems in the right order. If you can't, just click 'autofinish' to see how it works)",
+    subtitle:   "Famous game, where you need to put gems in the right order. If you can't, just click 'autofinish' to see how it works)",
     date:       "Jan 2021",
     content:    "Browser's Events, Browser's Storage, Algorithms, Javascript, CSS3, HTML5",
     image:      "./assets/images/projects/gem-puzzle.jpeg",

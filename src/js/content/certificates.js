@@ -122,6 +122,15 @@ export default [
     badge:    "./assets/images/certificates/gitops-fundamentals-badge.png",
     image:    "./assets/images/certificates/gitops-fundamentals-cert.jpg",
     id:       "13",
+  },
+  {
+    title:    "AWS Learning: Architecting",
+    subtitle: "Amazon Web Services Training and Certification",
+    date:     "May 2023",
+    badge:    "./assets/images/certificates/aws-learning-architecting-badge.png",
+    image:    "./assets/images/certificates/aws-learning-architecting-badge.png",
+    id:       "14",
+
   }
 ]
 

@@ -2,7 +2,7 @@ export default [
 
   {
     title:      'Cloud',
-    content:    'Amazon Web Services, Yandex Cloud',
+    content:    'Amazon Web Services, Yandex Cloud, Selectel',
   },
 
   {
@@ -31,12 +31,12 @@ export default [
 
   {
     title:      'Webservers | Databases',
-    content:    'NGINX, Nginx Proxy Manager, Apache | MySQL, PostgreSQL',
+    content:    'Traefik, NGINX, Nginx Proxy Manager, Apache | MySQL, PostgreSQL, AWS DynamoDB'
   },
 
   {
     title:      'VCS and other',
-    content:    'GitHab, GitLab, Lens, Portainer, Jira, HTML, CSS, etc',
+    content:    'GitHab, GitLab, SonarQube, ESLint, Lens, Portainer, Jira, HTML, CSS, etc',
   },
 
 ]

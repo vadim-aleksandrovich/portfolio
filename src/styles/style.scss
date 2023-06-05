@@ -98,8 +98,8 @@ body {
     "name name info"
     "about about skills"
     "languages languages skills"
+    "education education skills"
     "experience experience experience"
-    "education education education"
     "certificats certificats certificats"
     "projects projects projects";
 }
@@ -262,7 +262,7 @@ body {
 .social__img {
   filter: brightness($social__brightness) grayscale($social__grayscale);
   margin-right: 1rem;
-  max-width: 4rem;
+  max-width: 6rem;
   border-radius:3%;
 }
 

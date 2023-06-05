@@ -23,13 +23,13 @@ export default [
   icon:     './assets/images/links/credly.jpg',
 },
 
-{
-  title:    'codewars',
-  link:     'https://www.codewars.com/users/vadim-aleksandrovich',
-  content:  '',
-  cssClass: 'social__img_cw',
-  icon:     './assets/images/links/codewars.jpg',
-},
+// {
+//   title:    'codewars',
+//   link:     'https://www.codewars.com/users/vadim-aleksandrovich',
+//   content:  '',
+//   cssClass: 'social__img_cw',
+//   icon:     './assets/images/links/codewars.jpg',
+// },
 
 {
   title:    'email',
