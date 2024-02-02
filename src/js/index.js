@@ -13,7 +13,7 @@ import infoLanguage from '@content/infoLanguage.js';
 import infoSocial from '@content/infoSocial.js';
 import infoSkills from '@content/infoSkills.js';
 
-let isProjects=false
+let isProjects=true
 
 const body = document.querySelector('body');
 const header = create('header', 'header');
@@ -94,7 +94,7 @@ const createProjects = function createProjects() {
     create('h4', 'item__subtitle',`${blockProjects[i].subtitle}`, textBox);
     create('p', 'item__date',`${blockProjects[i].date}`, textBox);
     create('p', 'item__content',`${blockProjects[i].content}`, textBox);
-    create('img', 'item__image item__image-project','', link, ['src', blockProjects[i].image]);
+    // create('img', 'item__image item__image-project','', link, ['src', blockProjects[i].image]);
   }
 };
 

@@ -2,12 +2,12 @@ export default [
 
   {
     title:      'Cloud',
-    content:    'Amazon Web Services, Yandex Cloud, Selectel',
+    content:    'Amazon Web Services, Yandex Cloud, Sber Cloud, Selectel',
   },
 
   {
     title:      'IaC | Configuration | CI/CD',
-    content:    'Terraform | Ansible | GitLab CI/CD, Jenkins, AWS CodePipeline, ArgoCD',
+    content:    'Terraform | Ansible | GitLab CI/CD, Jenkins, AWS CodePipeline, ArgoCD, Helm',
   },
 
   {
@@ -26,7 +26,7 @@ export default [
 
   {
     title:      'Operating systems',
-    content:    'Linux',
+    content:    'CentOS, Ubuntu, Alpine, Debian',
   },
 
   {
@@ -36,7 +36,7 @@ export default [
 
   {
     title:      'VCS and other',
-    content:    'GitHab, GitLab, SonarQube, ESLint, Lens, Portainer, Jira, HTML, CSS, etc',
+    content:    'GitHab, GitLab, Lens, Portainer, Jira, HTML, CSS, etc',
   },
 
 ]

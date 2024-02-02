@@ -1,6 +1,6 @@
 export default {
   title: "Vadim Aleksandrovich",
   subtitle: "DevOps (Cloud) Engineer",
-  content: "Experienced DevOps engineer with a strong foundation in infrastructure automation, CI/CD, and cloud technologies, effectively bridging the gap between development and operations teams. <br> Proficient in designing and implementing scalable and reliable deployment pipelines using tools like Jenkins or GitLab CI/CD enabling efficient software delivery and continuous integration. <br> Collaborated closely with development teams to optimize build processes, implement version control best practices, and ensure efficient release management. <br> Actively contributed to infrastructure security practices, implementing secure network configurations, managing access controls, and incorporating security best practices in the CI/CD pipeline.",
+  content: "Since 2021, I've been working on a variety of projects, from internal initiatives to major commercial developments in fintech and retail. My specialization includes deep knowledge of AWS, Yandex Cloud, and Sber Cloud, as well as expertise in Kubernetes, Docker, and CI/CD processes using GitLab CI and ArgoCD.<br> I spend a lot of time learning and growing, taking courses and getting certificates from big names like Amazon Web Services and Yandex Cloud. I like to share what I know with others in the community and I'm always looking to learn more.",
   photo: "./assets/images/avatar.jpeg",
 }

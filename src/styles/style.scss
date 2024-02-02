@@ -103,6 +103,13 @@ body {
     "certificats certificats certificats"
     "projects projects projects";
 }
+// "name name info"
+// "about about skills"
+// "languages languages skills"
+// "education education skills"
+// "experience experience experience"
+// "certificats certificats certificats"
+// "projects projects projects";
 
 .container {
   display: flex;
@@ -239,7 +246,7 @@ body {
     }
   }
   .item__image {
-    width: 17rem;
+    width: 35rem;
   }
 }
 
