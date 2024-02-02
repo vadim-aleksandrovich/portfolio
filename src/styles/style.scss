@@ -97,7 +97,7 @@ body {
   grid-template-areas:
     "name name info"
     "experience experience skills"
-    "languages . education"
+    "education . languages"
     "certificats certificats certificats"
     "projects projects projects";
 }
@@ -202,8 +202,29 @@ body {
   grid-area: experience;
 }
 
+.experience_header {
+  display: flex;
+  justify-content: flex-start; /* Выравнивает дочерние элементы по краям контейнера */
+  align-items: center; /* Центрирует дочерние элементы по вертикали */
+}
+
+.item__title {
+  font-weight: 500;
+  font-size: 1.7rem;
+  /* Убедитесь, что маргины не мешают расположению */
+  margin-right: 1rem; /* Небольшой отступ справа, если нужно */
+}
+
+.item__date {
+  font-size: 1.7rem;
+  color: $color-gray;
+  white-space: nowrap; /* Убедитесь, что дата не переносится на новую строку */
+}
+
+
 .container_education {
   grid-area: education;
+  width: 100%; 
 }
 
 .container_certificats {

@@ -51,12 +51,13 @@ const createSkills = function createSkills() {
 };
 
 const createExperience = function createExperience() {
-  for (let i = blockExperience.length - 1; i >=0; i -= 1) {
+  for (let i = blockExperience.length - 1; i >= 0; i -= 1) {
     const item = create('section', 'item item_experience', '', experience);
-    create('h3', 'item__title', `${blockExperience[i].title}`, item);
-    create('h4', 'item__subtitle',`${blockExperience[i].subtitle}`, item);
-    create('p', 'item__date',`${blockExperience[i].date}`, item);
-    create('p', 'item__content',`${blockExperience[i].content}`, item);
+    const header = create('div', 'experience_header', '', item); // Создаем контейнер для заголовка и даты
+    create('h3', 'item__title', `${blockExperience[i].title}`, header);
+    create('p', 'item__date', `${blockExperience[i].date}`, header); // Дата теперь внутри header
+    create('h4', 'item__subtitle', `${blockExperience[i].subtitle}`, item);
+    create('p', 'item__content', `${blockExperience[i].content}`, item);
   }
 };
 
