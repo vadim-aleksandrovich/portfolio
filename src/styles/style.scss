@@ -96,10 +96,8 @@ body {
   gap: 0px 0px;
   grid-template-areas:
     "name name info"
-    "about about skills"
-    "languages languages skills"
-    "education education skills"
-    "experience experience experience"
+    "experience experience skills"
+    "languages . education"
     "certificats certificats certificats"
     "projects projects projects";
 }
